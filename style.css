@@ -1,0 +1,100 @@
+/*  copyright 2014 Alice Rühl */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #3b3b3b;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    padding: 30px;
+}
+
+nav ul {
+    list-style-type:none;
+}
+nav ul li {
+    padding: 30px;
+    float: left;
+}
+
+#about, #projects, #contact {
+    margin: 0;
+    padding: 30px;
+}
+
+.wrapper {
+    min-height: 500px;
+    height: auto;
+    height: 100%;
+    margin: 0 auto -1em;
+    background: url("img/bg-map.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+}
+
+.eduentry {
+    margin: 0;
+    padding-bottom:30px;
+}
+
+.poiimg{
+    vertical-align: text-bottom;
+    opacity: 0.5;
+}
+
+.mapsource, .push {
+    position: relative;
+    height: 1em;
+    float: right;
+}
+
+.projentry {
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    float: left;
+    border: 1px #cbcbcb outset;
+}
+.projimg {
+    vertical-align: baseline;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    margin: 0;
+    padding: 30px;
+}
+
+/*  text styles */
+#about h3, p{
+    margin: 0;
+}
+
+a {
+    color: #3b3b3b;
+    text-decoration:none;
+    border-bottom: 1px dotted #3b3b3b;
+}
+a:active {
+    border-bottom: none;
+}
+
+.current {
+    text-decoration:none;
+    border-bottom: none;
+}
+
+.subtext {
+    font-size: smaller;
+}
+
+.halo {
+    background-color: white;
+}
