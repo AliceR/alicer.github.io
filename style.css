@@ -71,17 +71,19 @@ h3 {
 }
 
 .projentry {
-    margin: 10px;
-    padding: 10px;
-    height: 300px;
+    margin: 0 30px 30px 0;
+    padding: 20px;
     float: left;
-    border: 1px #cbcbcb outset;
+    border: 1px #878787 outset;
+    -webkit-box-shadow: 2px 8px 10px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    2px 8px 10px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         2px 8px 10px 0px rgba(50, 50, 50, 0.5);
 }
 .projimg {
     vertical-align: baseline;
 }
 
-.home {
+.homelink {
     text-align: right;
 }
 .clear {
