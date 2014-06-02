@@ -16,7 +16,6 @@ body {
 }
 
 nav {
-    padding-left: 80px;
     display: inline-block;
 }
 
@@ -58,6 +57,9 @@ h3 {
     padding-top: 1em;
     padding-bottom: 2em;
 }
+.eduentry p {
+    margin: 15px;
+}
 
 .poiimg{
     vertical-align: text-bottom;
@@ -79,6 +81,7 @@ h3 {
     -moz-box-shadow:    2px 8px 10px 0px rgba(50, 50, 50, 0.5);
     box-shadow:         2px 8px 10px 0px rgba(50, 50, 50, 0.5);
 }
+
 .projimg {
     vertical-align: baseline;
 }
