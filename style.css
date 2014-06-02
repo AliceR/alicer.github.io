@@ -73,7 +73,7 @@ h3 {
 }
 
 .projentry {
-    margin: 0 30px 30px 0;
+    margin: 30px;
     padding: 20px;
     float: left;
     border: 0px #878787 outset;
@@ -84,6 +84,16 @@ h3 {
 
 .projimg {
     vertical-align: baseline;
+}
+
+.contentry {
+    padding: 20px;
+    float: left;
+
+}
+
+.contentry a{
+    border-bottom: none;
 }
 
 .homelink {
