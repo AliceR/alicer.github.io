@@ -5,10 +5,14 @@
     padding: 0;
 } 
 
+header, footer, nav {
+    display: block;
+}
+
 body {
-    margin: 8px;
+    margin: 0 auto;
     color: #3b3b3b;
-    background-color: white;
+    background: white;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -17,6 +21,8 @@ body {
 }
 
 header {
+    background-color: white;
+    line-height: 44px;
     border: 0px #878787 outset;
     -webkit-box-shadow: 2px 8px 10px 0px rgba(210, 210, 210, 0.5);
     -moz-box-shadow:    2px 8px 10px 0px rgba(210, 210, 210, 0.5);
@@ -24,14 +30,31 @@ header {
 }
 
 nav {
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: white;
+}
+nav ul {
+    margin: 0 auto;
+    list-style: none;
+}
+nav ul li {
     float: right;
 }
-
-nav li {
-    display: inline-block;
-    padding-right: 50px;
+nav ul li a {
+    display: block;
+    margin-right: 20px;
+    width: 140px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
 }
+
+nav ul li a:hover {
+    color: #5ce4de;
+}
+
 
 .wrapper {
     min-height: 500px;
@@ -48,7 +71,6 @@ nav li {
     padding-top: 1em;
     padding-bottom: 2em;
 }
-
 
 .poiimg{
     vertical-align: text-bottom;
@@ -75,10 +97,19 @@ nav li {
     vertical-align: baseline;
 }
 
+.projpdf{
+    position: relative;
+    text-align: center;
+    margin: 30px;
+}
+.brochure{
+    width:600px;
+    height:620px;
+}
+
 .contentry {
     padding: 20px;
     float: left;
-
 }
 
 .contentry a{
@@ -98,10 +129,6 @@ footer {
 
 /*  text styles */
 
-h1 {
-    padding-top: 1em;
-}
-
 h2 {
     padding-top: 1em;
 }
@@ -119,7 +146,6 @@ p{
 a {
     color: #3b3b3b;
     text-decoration:none;
-    border-bottom: 1px dotted #3b3b3b;
 }
 a:active {
     border-bottom: none;
