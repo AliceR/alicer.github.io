@@ -16,7 +16,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#home, #about, #projects, #contact {
+#home, #about, #projects, #contact, #content {
     padding: 50px;
 }
 
@@ -54,7 +54,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #5ce4de;
 }
-
 
 .wrapper {
     min-height: 500px;
@@ -97,14 +96,18 @@ nav ul li a:hover {
     vertical-align: baseline;
 }
 
-.projpdf{
+.project{
     position: relative;
     text-align: center;
     margin: 30px;
 }
+
 .brochure{
     width:600px;
     height:620px;
+}
+.croquis{
+    width: 800px;
 }
 
 .contentry {
