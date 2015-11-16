@@ -3,21 +3,27 @@
 * {
     margin: 0;
     padding: 0;
-} 
-
-header, footer, nav {
-    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
 }
 
-body {
+header, footer, nav, body {
     margin: 0 auto;
+    max-width: 1600px;
     color: #3b3b3b;
     background: white;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#home, #about, #projects, #contact, #content {
-    padding: 50px;
+#home{
+    padding: 40px;
+}
+
+#about, #projects, #contact, #content {
+    padding: 40px;
+    min-height: 750px;
+    overflow: auto;
 }
 
 header {
@@ -30,17 +36,19 @@ header {
 }
 
 nav {
-    position: absolute;
-    left: 0;
+    position: relative;
     width: 100%;
     background: white;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content:         flex-end;
 }
 nav ul {
-    margin: 0 auto;
     list-style: none;
 }
 nav ul li {
-    float: right;
+    display: inline-block;
 }
 nav ul li a {
     display: block;
@@ -51,19 +59,27 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
+a:hover {
     color: #5ce4de;
 }
 
 .wrapper {
-    min-height: 500px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#map{
+    -webkit-flex: 8;
+            flex: 8;
+    min-height: 750px;
+    height: inherit;
+}
+
+.aside{
+    -webkit-flex: 3;
+            flex: 3;
     height: auto;
-    height: 100%;
-    margin: 0 auto -1em;
-    background: url("img/bg-map.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: cover;
+    padding-left: 40px;
 }
 
 .eduentry {
@@ -76,16 +92,10 @@ nav ul li a:hover {
     opacity: 0.64;
 }
 
-.mapsource, .push {
-    position: relative;
-    float: right;
-    padding: 2px;
-}
-
 .projentry {
-    margin: 30px;
+    margin: 5px;
     padding: 20px;
-    float: left;
+    display: inline-block;
     border: 0px #878787 outset;
     -webkit-box-shadow: 2px 8px 10px 0px rgba(210, 210, 210, 0.5);
     -moz-box-shadow:    2px 8px 10px 0px rgba(210, 210, 210, 0.5);
@@ -110,9 +120,17 @@ nav ul li a:hover {
     width: 800px;
 }
 
+.contacts {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items:         center;
+    -webkit-justify-content: space-around;
+    justify-content:         space-around;
+}
+
 .contentry {
     padding: 20px;
-    float: left;
 }
 
 .contentry a{
@@ -122,12 +140,14 @@ nav ul li a:hover {
 .homelink {
     text-align: right;
 }
-.clear {
-    clear: both;
-}
 
 footer {
-    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    background-color: white;
+    width: 100%;
 }
 
 /*  text styles */
