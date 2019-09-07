@@ -10,7 +10,7 @@ Mobility analytics tool to analyse public transport data and movement patterns t
 ---
 
 ![Demo](./assets/img/NightlifeDemo.png)
-Demo web app to explain ridepooling in comparison to taxi and public transport.
+Demo web app explaining ridepool in comparison to taxi and public transport.
 
 `Tech Stack:` JavaScript ・jQuery ・ Leaflet.js ・ HTML ・ CSS
 
